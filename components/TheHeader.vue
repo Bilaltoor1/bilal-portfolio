@@ -86,23 +86,6 @@
   display: none;
 }
 
-.mobile-nav-container {
-  display: flex;
-  background-color: var(--clr-slate800);
-  min-width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
-  z-index: 200;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: var(--text-color);
-  justify-content: center;
-  align-items: center;
-  transition: all .5s;
-}
-
 .open {
   display: flex;
 }
@@ -137,6 +120,23 @@
 @media (max-width: 1024px) {
   .mobile-nav {
     display: block;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    background-color: var(--clr-slate800);
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 200;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
   }
 
   .header-list {
