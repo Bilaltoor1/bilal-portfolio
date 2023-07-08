@@ -100,15 +100,15 @@
 const projects = ref([
   {
     name: 'Vue js',
-    img: '/Cover image.jpg'
+    img: '/Cover image.png'
   },
   {
     name: 'nuxt js',
-    img: '/Cover image.jpg'
+    img: '/Cover image.png'
   },
   {
     name: 'Node js',
-    img: '/Cover image.jpg'
+    img: '/Cover image.png'
   },
 ])
 </script>
