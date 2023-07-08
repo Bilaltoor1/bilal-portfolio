@@ -19,7 +19,7 @@
     <div class="mobile-nav" @click="showMobileNav">
       <Icon name="ri:menu-fill" size="1.8em"/>
     </div>
-    <div class="mobile-nav-container" v-show="isShow">
+    <div class="mobile-nav-container" v-if="isShow">
       <ul class="mobile-header-list">
         <li class="mobile-header-list-item">
           <a href="#about-me" @click="isShow = false">About</a>
@@ -86,6 +86,23 @@
   display: none;
 }
 
+.mobile-nav-container {
+  display: flex;
+  background-color: var(--clr-slate800);
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 200;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
 .open {
   display: flex;
 }
@@ -122,23 +139,6 @@
     display: block;
   }
 
-  .mobile-nav-container {
-    display: flex;
-    background-color: var(--clr-slate800);
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
-    z-index: 200;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: var(--text-color);
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-  }
-
   .header-list {
     display: none;
   }
@@ -154,7 +154,7 @@
 }
 </style>
 <script setup>
-const isShow = ref('false');
+const isShow = ref(false);
 const showMobileNav = () => {
   isShow.value = !isShow.value
 }
