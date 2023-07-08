@@ -108,7 +108,7 @@ const projects = ref([
   },
   {
     name: 'Node js',
-    img: '/cover.jpg'
+    img: '/Cover image.jpg'
   },
 ])
 </script>
