@@ -152,6 +152,11 @@
   }
 
 }
+@media (max-width: 600px) {
+  .mobile-nav-container a {
+    font-size: 1.2rem;
+  }
+}
 </style>
 <script setup>
 const isShow = ref(false);
