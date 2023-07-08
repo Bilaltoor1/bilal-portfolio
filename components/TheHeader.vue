@@ -13,8 +13,9 @@
       </li>
     </ul>
     <button class="header-button">
-      Contact Me
-      <Icon name="mdi:arrow-right-thin" size="1.5em"/>
+      <a href="#contact">Contact Me
+        <Icon name="mdi:arrow-right-thin" size="1.5em"/>
+      </a>
     </button>
     <div class="mobile-nav" @click="showMobileNav">
       <Icon name="ri:menu-fill" size="1.8em"/>
@@ -69,13 +70,14 @@
 
 .header-button {
   background-color: var(--text-color);
-  color: var(--clr-slate800);
   display: flex;
   width: 170px;
   height: 100%;
 //padding: 18px 42px; justify-content: center; align-items: center; gap: 10px; border-radius: 5px; font-size: 1rem;
 }
-
+.header-button a{
+  color: var(--clr-slate800);
+}
 .logo {
   font-size: 2rem;
   font-family: 'Cookie', cursive;
@@ -152,6 +154,7 @@
   }
 
 }
+
 @media (max-width: 600px) {
   .mobile-nav-container a {
     font-size: 1.2rem;

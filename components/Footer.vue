@@ -4,13 +4,13 @@
       <div class="footer-bars-container">
         <ul class="footer-list">
           <li class="footer-list-item">
-            <NuxtLink to="/">About</NuxtLink>
+            <a href="#about-me">About</a>
           </li>
           <li class="footer-list-item">
-            <NuxtLink to="/">Projects</NuxtLink>
+            <a href="#projects">Projects</a>
           </li>
           <li class="footer-list-item">
-            <NuxtLink to="/">Skills</NuxtLink>
+            <a href="#skills" >Skills</a>
           </li>
         </ul>
         <ul class="social-media">

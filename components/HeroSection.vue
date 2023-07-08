@@ -13,8 +13,10 @@
       <Icon name="mdi:jira" class="content-img" size="4em" color="#475569"/>
     </div>
     <button class="hero-button">
-      SKILLS
-      <Icon name="mdi:arrow-right-thin" size="1.5em"/>
+      <a href="#skills">
+        SKILLS
+        <Icon name="mdi:arrow-right-thin" size="1em"/>
+      </a>
     </button>
   </div>
 </template>
@@ -96,17 +98,21 @@
   gap: 10px;
   border-radius: 5px;
   font-size: 1rem;
-  color: var(--clr-slate800);
   height: max-content;
   margin-top: 3rem;
   padding: .5rem 2rem;
   font-weight: 500;
 }
 
+.hero-button a {
+  color: var(--clr-slate800);
+}
+
 @media (max-width: 1024px) {
   .hero-content {
     width: 80%;
   }
+
   .hero-content {
     margin-top: 0;
   }
@@ -136,10 +142,12 @@
   .hero-description {
     font-size: .8rem;
   }
+
   @media (max-width: 480px) {
     .hero-content {
       width: 96%;
     }
+
     .hero-section {
       height: 100%;
       margin: 5rem 0;
@@ -149,7 +157,7 @@
     .hero-work {
       font-size: 1.1rem;
     }
-   
+
 
     .hero-work strong {
       font-weight: bold;
@@ -158,3 +166,5 @@
   }
 }
 </style>
+<script setup lang="ts">
+</script>
