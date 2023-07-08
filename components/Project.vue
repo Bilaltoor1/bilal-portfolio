@@ -33,8 +33,7 @@
 
 .project-container {
   display: flex;
-//grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); justify-content: center; margin: 0 auto; flex-wrap: wrap;
-  gap: 3rem;
+//grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); justify-content: center; margin: 0 auto; flex-wrap: wrap; gap: 3rem;
 }
 
 .project-item {
@@ -101,15 +100,15 @@
 const projects = ref([
   {
     name: 'Vue js',
-    img: '/thumbnail.png'
+    img: '/thumbnail.jpg'
   },
   {
     name: 'nuxt js',
-    img: '/Cover image.png'
+    img: '/Cover image.jpg'
   },
   {
     name: 'Node js',
-    img: '/cover.png'
+    img: '/cover.jpg'
   },
 ])
 </script>
